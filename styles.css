@@ -65,38 +65,24 @@ html {
 }
 
 .dexscreener-section {
-    width: 90%;
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
 }
 
 #dexscreener-embed {
-    position: relative;
+    max-width: 800px;
     width: 100%;
-    padding-bottom: 125%;
-    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 #dexscreener-embed iframe {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 0;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-#dexscreener-embed iframe:hover {
-    transform: scale(1.02);
-}
-
-@media(min-width:1400px) {
-    #dexscreener-embed {
-        padding-bottom: 65%;
-    }
+    height: 500px;
+    border: none;
 }
 
 .rugger-section {
@@ -179,9 +165,10 @@ html {
 }
 
 .levering-tagline h2 {
-    font-size: 2em;
-    color: var(--accent-color);
-    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4caf50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: pulse 2s ease-in-out infinite;
@@ -297,13 +284,10 @@ html {
 }
 
 .missed-profits {
-  font-size: 1.3rem;
-  margin-top: 10px;
-}
-
-.profit-amount {
-  color: #4caf50; /* Green color for profits */
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .progress-container {
@@ -331,6 +315,15 @@ html {
 
 .progress-bar.bg-danger {
     background-color: #dc3545; /* Red for high progress */
+}
+
+.progress-target {
+    color: #4caf50;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes shake {
