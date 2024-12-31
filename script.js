@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const devTokenAmount = 51_100_000;
     const devRugProceeds = 7;
     const dexUrl = "https://api.dexscreener.com/latest/dex/pairs/solana/57kbsu4Uj6KazfYVKDhyexDcLvovzxXVHpRsJXJm7weQ";
+    const targetMissedRevenue = 777_000_000;
 
     const profitAmountEl = document.getElementById("profit-amount");
     const overlayEl = document.getElementById("overlay");
@@ -56,8 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (progressBarContainer) {
             const progressBar = progressBarContainer.querySelector('.progress-bar');
             
-            const maxValue = 10_000_000;
-            const progressPercentage = Math.min((missedRevenue / maxValue) * 100, 100);
+            const progressPercentage = Math.min((missedRevenue / targetMissedRevenue) * 100, 100);
 
             if (progressBar) {
                 progressBar.style.width = `${progressPercentage}%`;
@@ -81,3 +81,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateMissedRevenue, 5000);
 });
+
