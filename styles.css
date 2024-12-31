@@ -18,6 +18,15 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .logo-container {
@@ -271,6 +280,70 @@ body {
     border-top: 1px solid var(--border-color);
     margin-top: 20px;
     font-size: 0.8em;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for clarity */
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  border: 2px solid #4caf50; /* Slight green border for style */
+}
+
+.rugged {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.missed-profits {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.profit-amount {
+  color: #4caf50; /* Green color for profits */
+  font-weight: bold;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 10px;
+    background-color: #4caf50; /* Default green */
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar.bg-success {
+    background-color: #28a745; /* Green for low progress */
+}
+
+.progress-bar.bg-warning {
+    background-color: #ffc107; /* Yellow for medium progress */
+}
+
+.progress-bar.bg-danger {
+    background-color: #dc3545; /* Red for high progress */
+}
+
+@keyframes shake {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-2px, 0); }
+  40%  { transform: translate(2px, 0); }
+  60%  { transform: translate(-2px, 0); }
+  80%  { transform: translate(2px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.shake {
+  animation: shake 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
