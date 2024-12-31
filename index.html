@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levcoin - Dev Rugged</title>
+    <meta charset="UTF-8" />
+    <title>LevCoin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/gif" href="https://i.ibb.co/4SjCWsk/minecraft-minecraft-lever.gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="logo-container">
-        <img src="https://i.ibb.co/4SjCWsk/minecraft-minecraft-lever.gif" alt="Levcoin Logo" class="logo">
-    </div>
-    
-    <div class="levering-tagline">
-        <h2>Everyday I'm Levering</h2>
+        <img src="https://i.ibb.co/4SjCWsk/minecraft-minecraft-lever.gif" alt="LevCoin Logo" class="logo">
+        <h1>LevCoin</h1>
     </div>
 
-    <div class="title-section">
-        <h1>Dev Rugged for $7 and the Community is Taking Over!</h1>
-        <h2>Missed Profits: $3,483,641</h2>
-    </div>
-
-    <div class="dexscreener-section">
-        <div id="dexscreener-embed">
-            <iframe src="https://dexscreener.com/solana/57kbsu4Uj6KazfYVKDhyexDcLvovzxXVHpRsJXJm7weQ?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"></iframe>
+    <div class="overlay" id="overlay">
+        <div class="rugged">DEV RUGGED AND ONLY MADE $7</div>
+        <div class="missed-profits">Missed Profits: <span class="profit-amount" id="profit-amount">$3,483,641</span></div>
+        
+        <div id="progress-bar-container" class="progress-container">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
 
-    <div class="rugger-section">
-        <img src="https://i.ibb.co/V9Gz1GM/photo-2024-12-30-05-45-32.jpg" alt="Rugger Image" class="rugger-image">
-        <p class="rugger-caption">When the $7 rug went global...</p>
-    </div>
+    <div class="content-container">
+        <div class="levering-tagline">
+            <h2>Everyday I'm Levering</h2>
+        </div>
 
-    <div class="video-section">
-        <video controls class="worst-error-video">
-            <source src="IMG_2565.MP4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p class="video-caption">the worst error of his life</p>
-    </div>
+        <div class="title-section">
+            <h1>Dev Rugged for $7 and the Community is Taking Over!</h1>
+        </div>
 
-    <div class="social-links">
-        <a href="https://t.me/LEVCOINCTO" target="_blank" class="social-icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-        </a>
-        <a href="https://x.com/levcoin12037?s=21" target="_blank" class="social-icon">
-            <i class="fa-brands fa-x-twitter"></i>
-        </a>
+        <div class="dexscreener-section">
+            <div id="dexscreener-embed">
+                <iframe src="https://dexscreener.com/solana/57kbsu4Uj6KazfYVKDhyexDcLvovzxXVHpRsJXJm7weQ?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"></iframe>
+            </div>
+        </div>
+
+        <div class="rugger-section">
+            <img src="https://i.ibb.co/V9Gz1GM/photo-2024-12-30-05-45-32.jpg" alt="Rugger Image" class="rugger-image">
+            <p class="rugger-caption">When the $7 rug went global...</p>
+        </div>
+
+        <div class="video-section">
+            <video controls class="worst-error-video">
+                <source src="IMG_2565.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-caption">the worst error of his life</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://t.me/LEVCOINCTO" target="_blank" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+            </a>
+            <a href="https://x.com/levcoin12037?s=21" target="_blank" class="social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
     </div>
 
     <footer class="site-footer">
@@ -66,8 +77,9 @@
             </div>
             <div class="footer-section contact">
                 <h3>Contact</h3>
-                <p>For community inquiries and collaborations join our TG </p>
+                <p>For community inquiries and collaborations</p>
                 <div class="contact-info">
+                    <span>Go to our TG</span>
                 </div>
             </div>
         </div>
@@ -79,4 +91,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
